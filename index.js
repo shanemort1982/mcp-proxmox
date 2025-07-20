@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 // Load environment variables from .env file
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const envPath = join(__dirname, '../../.env');
+const envPath = join(__dirname, '.env');
 
 try {
   const envFile = readFileSync(envPath, 'utf8');
